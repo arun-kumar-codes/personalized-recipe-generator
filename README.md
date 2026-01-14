@@ -1,24 +1,24 @@
 # Personalized Recipe Generator ![Build Status](https://img.shields.io/badge/build-passing-brightgreen) ![Version](https://img.shields.io/badge/version-1.0.0-blue) ![License](https://img.shields.io/badge/license-MIT-yellowgreen)
 
 ## Project Description
-The **Personalized Recipe Generator** is a web application designed to help home cooks and food enthusiasts create personalized recipes based on their available ingredients and dietary preferences. Users can save their favorite recipes, plan meals for the week, and generate shopping lists, making meal planning easier and more efficient.
+The **Personalized Recipe Generator** is a web application designed to help home cooks, food enthusiasts, and individuals optimize their meal planning and cooking experience. Users can input available ingredients and dietary preferences to generate personalized recipes, save their favorites, plan meals for the week, and create shopping lists based on their selections.
 
 ## Features
-- User authentication and profile management
-- Ingredient-based recipe suggestions
-- Meal planning and shopping list generation
-- User ratings and reviews for recipes
-- Integration with external APIs for nutritional information
+- 👤 User authentication and profile management
+- 🍽️ Ingredient-based recipe suggestions
+- 📅 Meal planning and shopping list generation
+- ⭐ User feedback and rating system for recipes
+- 📊 Integration with external APIs for nutritional information
 
 ## Tech Stack
 ### Frontend
-- **React** ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+- **Next.js** 🌐
 
 ### Backend
-- **Node.js** ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
+- **FastAPI** 🚀
 
 ### Database
-- **MongoDB** ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
+- **PostgreSQL** 🗄️
 
 ## Installation
 To set up the project locally, follow these steps:
@@ -29,46 +29,53 @@ git clone https://github.com/arun-kumar-codes/personalized-recipe-generator.git
 - Navigate to the project directory
 bash
 cd personalized-recipe-generator
-- Install the dependencies
+- Create a virtual environment
 bash
-npm install
-- Set up your environment variables (create a `.env` file)
+python -m venv venv
+- Activate the virtual environment
 bash
-touch .env
-- Start the development server
+source venv/bin/activate
+- Install the required dependencies
 bash
-npm start
+pip install -r requirements.txt
+- Set up the PostgreSQL database and update the configuration file with your database credentials.
+
 ## Usage
-Once the application is running, you can:
-- Sign up or log in to your account.
-- Input your available ingredients and dietary preferences.
-- Browse personalized recipe suggestions.
-- Save your favorite recipes and plan your meals for the week.
-- Generate shopping lists based on your selected recipes.
+1. Start the FastAPI server
+bash
+uvicorn app.main:app --reload
+2. Open your browser and navigate to `http://localhost:8000`.
+3. Create an account or log in to your existing profile.
+4. Input your available ingredients and dietary preferences to generate personalized recipes.
 
 ## API Documentation
-For detailed API documentation, please refer to the [API Documentation](https://github.com/arun-kumar-codes/personalized-recipe-generator/wiki/API-Documentation).
+For detailed API documentation, please refer to the [API Docs](https://github.com/arun-kumar-codes/personalized-recipe-generator/docs/api.md).
 
 ## Testing
-To run tests for the project, use the following command:
+To run the tests, execute the following command:
 bash
-npm test
+pytest
 ## Deployment
 To deploy the application, follow these steps:
-- Build the application
+- Build the Next.js application
 bash
 npm run build
-- Deploy the build folder to your preferred hosting service.
+- Start the production server
+bash
+npm start
+- Ensure your FastAPI server is running in the production environment.
 
 ## Contributing
 We welcome contributions! Please follow these steps:
-- Fork the repository
-- Create a new branch
-- Make your changes
-- Submit a pull request
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/arun-kumar-codes/personalized-recipe-generator/LICENSE) file for details.
 
 ## Acknowledgments
-- Special thanks to the contributors and the open-source community for their support and resources.
+- Thanks to the contributors and the open-source community for their support and resources.
+- Special thanks to the creators of FastAPI, Next.js, and PostgreSQL for their amazing frameworks and tools.
